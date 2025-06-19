@@ -1,0 +1,176 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<header class="header">
+  <nav class="nav">
+    <div class="container mx-auto px-4">
+      <div class="nav-content">
+        <a href="/" class="logo">
+          <span class="logo-text">
+            <img src="/media/logo/LOGO-GKG.png" alt="GKG Reportage" class="hover:scale-110 transition-all duration-300" 
+            width="77"
+            height="77"
+            />
+          </span>
+        </a>
+        
+        <div class="nav-menu" id="navMenu">
+          <a href="/" class={currentPath === '/' ? 'nav-link active' : 'nav-link'}>Accueil</a>
+          <a href="/about" class={currentPath === '/about' ? 'nav-link active' : 'nav-link'}>À propos</a>
+          <a href="/portfolios" class={currentPath === '/portfolios' ? 'nav-link active' : 'nav-link'}>Portfolios</a>
+          <a href="/articles" class={currentPath === '/articles' ? 'nav-link active' : 'nav-link'}>Articles</a>
+          <a href="/services" class={currentPath === '/services' ? 'nav-link active' : 'nav-link'}>Services</a>
+          <a href="/pricing" class={currentPath === '/pricing' ? 'nav-link active' : 'nav-link'}>Tarifs</a>
+          <a href="/contact" class={currentPath === '/contact' ? 'nav-link active' : 'nav-link'}>Contact</a>
+        </div>
+        
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-border);
+    transition: var(--transition);
+  }
+
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-sm) 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .logo-text {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+
+  .nav-link {
+    font-weight: 500;
+    color: var(--color-secondary);
+    transition: var(--transition);
+    position: relative;
+    padding: 8px 0;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--color-primary);
+  }
+
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-accent);
+    border-radius: 1px;
+  }
+
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    gap: 4px;
+  }
+
+  .nav-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--color-secondary);
+    transition: var(--transition);
+  }
+
+  @media (max-width: 768px) {
+    .nav-menu {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: white;
+      flex-direction: column;
+      padding: var(--spacing-lg);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .nav-menu.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .nav-toggle {
+      display: flex;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  }
+</style>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  navToggle?.addEventListener('click', () => {
+    navToggle.classList.toggle('active');
+    navMenu?.classList.toggle('active');
+  });
+
+  // Close menu when clicking on a link
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navToggle?.classList.remove('active');
+      navMenu?.classList.remove('active');
+    });
+  });
+</script>

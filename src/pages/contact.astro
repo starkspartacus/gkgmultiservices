@@ -1,0 +1,792 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Contact - ReportPro" description="Contactez ReportPro pour vos projets de reportage événementiel et photographie professionnelle. Devis gratuit et personnalisé.">
+  <Header />
+  
+  <main>
+    <section class="hero-contact">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Contactez-nous</h1>
+          <p class="hero-subtitle">
+            Prêt à donner vie à votre projet ? Discutons ensemble de vos besoins
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <div class="form-header">
+              <h2>Demande de devis</h2>
+              <p>Décrivez-nous votre projet pour recevoir une proposition personnalisée</p>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">Prénom *</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Nom *</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Téléphone</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="company">Entreprise / Organisation</label>
+                <input type="text" id="company" name="company">
+              </div>
+              
+              <div class="form-group">
+                <label for="serviceType">Type de service *</label>
+                <select id="serviceType" name="serviceType" required>
+                  <option value="">Sélectionnez un service</option>
+                  <option value="evenementiel">Reportage événementiel</option>
+                  <option value="corporate">Photographie corporate</option>
+                  <option value="video">Production vidéo</option>
+                  <option value="documentaire">Reportage documentaire</option>
+                  <option value="mariage">Mariage & célébrations</option>
+                  <option value="autre">Autre (préciser dans le message)</option>
+                </select>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="eventDate">Date de l'événement</label>
+                  <input type="date" id="eventDate" name="eventDate">
+                </div>
+                <div class="form-group">
+                  <label for="location">Lieu</label>
+                  <input type="text" id="location" name="location" placeholder="Ville, région">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="duration">Durée estimée</label>
+                  <select id="duration" name="duration">
+                    <option value="">Sélectionnez</option>
+                    <option value="2h">2 heures</option>
+                    <option value="demi-journee">Demi-journée</option>
+                    <option value="journee">Journée complète</option>
+                    <option value="2-jours">2 jours</option>
+                    <option value="plus">Plus de 2 jours</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="budget">Budget approximatif</label>
+                  <select id="budget" name="budget">
+                    <option value="">Sélectionnez</option>
+                    <option value="500-1000">500€ - 1 000€</option>
+                    <option value="1000-2500">1 000€ - 2 500€</option>
+                    <option value="2500-5000">2 500€ - 5 000€</option>
+                    <option value="5000+">Plus de 5 000€</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="deliverables">Livrables souhaités</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="deliverables" value="photos-hd">
+                    <span class="checkmark"></span>
+                    Photos haute définition
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="deliverables" value="photos-web">
+                    <span class="checkmark"></span>
+                    Photos optimisées web
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="deliverables" value="video">
+                    <span class="checkmark"></span>
+                    Vidéo de synthèse
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="deliverables" value="retouche">
+                    <span class="checkmark"></span>
+                    Retouche avancée
+                  </label>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Description du projet *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Décrivez votre événement, vos attentes, contraintes particulières..." required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="newsletter" value="yes">
+                  <span class="checkmark"></span>
+                  Je souhaite recevoir la newsletter ReportPro
+                </label>
+              </div>
+              
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="privacy" value="accepted" required>
+                  <span class="checkmark"></span>
+                  J'accepte la <a href="/politique-confidentialite">politique de confidentialité</a> *
+                </label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Envoyer ma demande</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+          
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="info-section">
+              <h3>Informations de contact</h3>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Adresse</h4>
+                    <p>75 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Téléphone</h4>
+                    <p>+33 1 23 45 67 89</p>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Email</h4>
+                    <p>contact@reportpro.fr</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="info-section">
+              <h3>Horaires d'ouverture</h3>
+              <div class="hours-list">
+                <div class="hours-item">
+                  <span>Lundi - Vendredi</span>
+                  <span>9h00 - 18h00</span>
+                </div>
+                <div class="hours-item">
+                  <span>Samedi</span>
+                  <span>10h00 - 16h00</span>
+                </div>
+                <div class="hours-item">
+                  <span>Dimanche</span>
+                  <span>Sur rendez-vous</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="info-section">
+              <h3>Réponse rapide</h3>
+              <div class="response-info">
+                <div class="response-item">
+                  <div class="response-icon">⚡</div>
+                  <div>
+                    <h4>Devis express</h4>
+                    <p>Réponse sous 2h en journée</p>
+                  </div>
+                </div>
+                <div class="response-item">
+                  <div class="response-icon">📞</div>
+                  <div>
+                    <h4>Consultation téléphonique</h4>
+                    <p>Gratuite et sans engagement</p>
+                  </div>
+                </div>
+                <div class="response-item">
+                  <div class="response-icon">🎯</div>
+                  <div>
+                    <h4>Devis personnalisé</h4>
+                    <p>Adapté à votre budget</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="info-section">
+              <h3>Suivez-nous</h3>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Vimeo">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197a315.065 315.065 0 0 0 2.702-2.702C4.393 2.506 5.729 1.661 6.690 1.49c2.281-.336 3.683.842 4.203 3.537.562 2.906.95 4.713 1.167 5.423.639 2.666 1.343 3.999 2.109 3.999.598 0 1.499-.755 2.698-2.265 1.203-1.508 1.843-2.653 1.916-3.436.149-1.28-.371-1.914-1.565-1.914-.558 0-1.134.128-1.725.384 1.145-3.756 3.331-5.583 6.553-5.479 2.382.074 3.505 1.612 3.384 4.614z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Questions fréquentes</h2>
+          <p>Trouvez rapidement les réponses à vos questions</p>
+        </div>
+        
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-question" data-faq="1">
+              <span>Quels sont vos délais de livraison ?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-1">
+              <p>Nous livrons généralement les photos retouchées sous 48h pour les événements standards. Pour les projets plus complexes ou les productions vidéo, comptez 5 à 10 jours ouvrés.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" data-faq="2">
+              <span>Proposez-vous des forfaits tout inclus ?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-2">
+              <p>Oui, nous proposons des forfaits incluant la captation, la post-production et la livraison. Chaque devis est personnalisé selon vos besoins spécifiques.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" data-faq="3">
+              <span>Travaillez-vous partout en France ?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-3">
+              <p>Absolument ! Nous intervenons dans toute la France et même à l'international. Les frais de déplacement sont inclus dans nos devis.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" data-faq="4">
+              <span>Que se passe-t-il en cas d'annulation ?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-4">
+              <p>Nos conditions d'annulation sont flexibles : annulation gratuite jusqu'à 7 jours avant l'événement, 50% du montant entre 7 et 2 jours, montant total à moins de 48h.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    margin-top: 70px;
+  }
+
+  .hero-contact {
+    background: linear-gradient(135deg, var(--color-primary), #1e40af);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .contact-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+  }
+
+  .contact-form-container {
+    background: white;
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .form-header {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .form-header h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+  }
+
+  .form-header p {
+    color: var(--color-text-light);
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--color-secondary);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 12px 16px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: normal !important;
+    margin-bottom: 0 !important;
+  }
+
+  .checkbox-label input[type="checkbox"] {
+    display: none;
+  }
+
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-border);
+    border-radius: 4px;
+    position: relative;
+    transition: var(--transition);
+  }
+
+  .checkbox-label input[type="checkbox"]:checked + .checkmark {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .btn-full {
+    width: 100%;
+    justify-content: center;
+    padding: 16px 24px;
+    font-size: 1.1rem;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+  }
+
+  .info-section {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+
+  .info-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .contact-icon {
+    background: var(--color-bg-light);
+    padding: 12px;
+    border-radius: 50%;
+    color: var(--color-primary);
+    flex-shrink: 0;
+  }
+
+  .contact-item h4 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+    color: var(--color-primary);
+  }
+
+  .contact-item p {
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .hours-item:last-child {
+    border-bottom: none;
+  }
+
+  .hours-item span:first-child {
+    font-weight: 500;
+  }
+
+  .hours-item span:last-child {
+    color: var(--color-text-light);
+  }
+
+  .response-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .response-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .response-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .response-item h4 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    color: var(--color-primary);
+  }
+
+  .response-item p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .social-links {
+    display: flex;
+    gap: var(--spacing-sm);
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--color-bg-light);
+    border-radius: 50%;
+    color: var(--color-text-light);
+    transition: var(--transition);
+  }
+
+  .social-link:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .faq-section {
+    background: var(--color-bg-light);
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .section-header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  .faq-question {
+    width: 100%;
+    padding: var(--spacing-lg);
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+  }
+
+  .faq-question:hover {
+    background: var(--color-bg-light);
+  }
+
+  .faq-question svg {
+    transition: transform 0.3s ease;
+  }
+
+  .faq-question.active svg {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    padding: 0 var(--spacing-lg);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .faq-answer.active {
+    max-height: 200px;
+    padding: 0 var(--spacing-lg) var(--spacing-lg);
+  }
+
+  .faq-answer p {
+    color: var(--color-text-light);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+    }
+
+    .contact-form-container {
+      padding: var(--spacing-lg);
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+
+    .form-header h2 {
+      font-size: 1.75rem;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+
+<script>
+  // FAQ functionality
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const faqId = button.getAttribute('data-faq');
+      const answer = document.getElementById(`faq-${faqId}`);
+      const isActive = button.classList.contains('active');
+      
+      // Close all other FAQs
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      document.querySelectorAll('.faq-answer').forEach(ans => {
+        ans.classList.remove('active');
+      });
+      
+      // Toggle current FAQ
+      if (!isActive) {
+        button.classList.add('active');
+        answer.classList.add('active');
+      }
+    });
+  });
+
+  // Form submission
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Simple form validation and submission simulation
+    const formData = new FormData(this);
+    const submitButton = this.querySelector('button[type="submit"]');
+    
+    // Disable button and show loading state
+    submitButton.disabled = true;
+    submitButton.innerHTML = '<span>Envoi en cours...</span>';
+    
+    // Simulate form submission
+    setTimeout(() => {
+      alert('Merci pour votre demande ! Nous vous recontacterons dans les plus brefs délais.');
+      this.reset();
+      submitButton.disabled = false;
+      submitButton.innerHTML = `
+        <span>Envoyer ma demande</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+        </svg>
+      `;
+    }, 2000);
+  });
+</script>

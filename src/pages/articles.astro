@@ -1,0 +1,723 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Articles - ReportPro" description="Découvrez nos articles, conseils d'experts et actualités du monde de la photographie événementielle et du reportage professionnel.">
+  <Header />
+  
+  <main>
+    <section class="hero-articles">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Articles & Actualités</h1>
+          <p class="hero-subtitle">
+            Conseils d'experts, tendances et retours d'expérience du monde de la photographie professionnelle
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+      <div class="container">
+        <article class="featured-post">
+          <div class="featured-image">
+            <img src="https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop" alt="Tendances photo 2024" />
+            <div class="featured-category">À la une</div>
+          </div>
+          <div class="featured-content">
+            <div class="article-meta">
+              <span class="article-date">20 Mars 2024</span>
+              <span class="article-author">Par Marie Dubois</span>
+              <span class="article-read-time">8 min de lecture</span>
+            </div>
+            <h2>Les tendances de la photographie événementielle en 2024</h2>
+            <p class="article-excerpt">
+              Découvrez les nouvelles approches créatives qui marquent cette année : de l'authenticité documentaire aux techniques immersives, 
+              explorez comment les photographes professionnels réinventent la couverture d'événements pour créer des récits visuels plus impactants.
+            </p>
+            <div class="article-tags">
+              <span class="tag">Tendances</span>
+              <span class="tag">Photographie</span>
+              <span class="tag">Innovation</span>
+            </div>
+            <a href="#" class="btn btn-primary">Lire l'article complet</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="articles-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tous nos articles</h2>
+          <div class="articles-filters">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="conseils">Conseils</button>
+            <button class="filter-btn" data-filter="technique">Technique</button>
+            <button class="filter-btn" data-filter="tendances">Tendances</button>
+            <button class="filter-btn" data-filter="retour-experience">Retours d'expérience</button>
+          </div>
+        </div>
+        
+        <div class="articles-grid">
+          <!-- Article 1 -->
+          <article class="article-card" data-category="conseils">
+            <div class="article-image">
+              <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Réussir son événement" />
+              <div class="article-category">Conseils</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="article-date">15 Mars 2024</span>
+                <span class="article-read-time">5 min</span>
+              </div>
+              <h3>Comment réussir la couverture de votre événement corporate</h3>
+              <p>Nos conseils d'experts pour une documentation parfaite de vos moments clés d'entreprise...</p>
+              <div class="article-tags">
+                <span class="tag">Corporate</span>
+                <span class="tag">Événementiel</span>
+              </div>
+              <a href="#" class="article-link">Lire la suite</a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="article-card" data-category="technique">
+            <div class="article-image">
+              <img src="https://images.pexels.com/photos/1181474/pexels-photo-1181474.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Portrait corporate" />
+              <div class="article-category">Technique</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="article-date">10 Mars 2024</span>
+                <span class="article-read-time">7 min</span>
+              </div>
+              <h3>L'art du portrait corporate moderne</h3>
+              <p>Techniques et astuces pour des portraits professionnels authentiques et impactants...</p>
+              <div class="article-tags">
+                <span class="tag">Portrait</span>
+                <span class="tag">Éclairage</span>
+              </div>
+              <a href="#" class="article-link">Lire la suite</a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="article-card" data-category="retour-experience">
+            <div class="article-image">
+              <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Gala de charité" />
+              <div class="article-category">Retour d'expérience</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="article-date">5 Mars 2024</span>
+                <span class="article-read-time">6 min</span>
+              </div>
+              <h3>Retour sur le Gala de Charité 2024</h3>
+              <p>Comment nous avons documenté cet événement prestigieux au profit de l'éducation...</p>
+              <div class="article-tags">
+                <span class="tag">Gala</span>
+                <span class="tag">Caritatif</span>
+              </div>
+              <a href="#" class="article-link">Lire la suite</a>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="article-card" data-category="technique">
+            <div class="article-image">
+              <img src="https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Matériel photo" />
+              <div class="article-category">Technique</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="article-date">28 Février 2024</span>
+                <span class="article-read-time">10 min</span>
+              </div>
+              <h3>Guide complet du matériel pour reportage événementiel</h3>
+              <p>Découvrez notre sélection d'équipements professionnels pour tous types d'événements...</p>
+              <div class="article-tags">
+                <span class="tag">Matériel</span>
+                <span class="tag">Guide</span>
+              </div>
+              <a href="#" class="article-link">Lire la suite</a>
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="article-card" data-category="conseils">
+            <div class="article-image">
+              <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Festival musique" />
+              <div class="article-category">Conseils</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="article-date">25 Février 2024</span>
+                <span class="article-read-time">4 min</span>
+              </div>
+              <h3>Photographier un festival : défis et solutions</h3>
+              <p>Les spécificités de la couverture photo lors d'événements musicaux en extérieur...</p>
+              <div class="article-tags">
+                <span class="tag">Festival</span>
+                <span class="tag">Musique</span>
+              </div>
+              <a href="#" class="article-link">Lire la suite</a>
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="article-card" data-category="tendances">
+            <div class="article-image">
+              <img src="https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Mariage moderne" />
+              <div class="article-category">Tendances</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="article-date">20 Février 2024</span>
+                <span class="article-read-time">6 min</span>
+              </div>
+              <h3>Évolution de la photographie de mariage</h3>
+              <p>Comment les attentes des couples modernes transforment notre approche créative...</p>
+              <div class="article-tags">
+                <span class="tag">Mariage</span>
+                <span class="tag">Évolution</span>
+              </div>
+              <a href="#" class="article-link">Lire la suite</a>
+            </div>
+          </article>
+
+          <!-- Article 7 -->
+          <article class="article-card" data-category="retour-experience">
+            <div class="article-image">
+              <img src="https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Conférence tech" />
+              <div class="article-category">Retour d'expérience</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="article-date">15 Février 2024</span>
+                <span class="article-read-time">8 min</span>
+              </div>
+              <h3>Dans les coulisses de la Tech Conference Paris</h3>
+              <p>Immersion dans la plus grande conférence technologique européenne de l'année...</p>
+              <div class="article-tags">
+                <span class="tag">Conférence</span>
+                <span class="tag">Tech</span>
+              </div>
+              <a href="#" class="article-link">Lire la suite</a>
+            </div>
+          </article>
+
+          <!-- Article 8 -->
+          <article class="article-card" data-category="conseils">
+            <div class="article-image">
+              <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Lancement produit" />
+              <div class="article-category">Conseils</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="article-date">10 Février 2024</span>
+                <span class="article-read-time">5 min</span>
+              </div>
+              <h3>Optimiser la communication visuelle de votre lancement produit</h3>
+              <p>Stratégies pour maximiser l'impact de vos images lors d'événements de lancement...</p>
+              <div class="article-tags">
+                <span class="tag">Lancement</span>
+                <span class="tag">Communication</span>
+              </div>
+              <a href="#" class="article-link">Lire la suite</a>
+            </div>
+          </article>
+
+          <!-- Article 9 -->
+          <article class="article-card" data-category="technique">
+            <div class="article-image">
+              <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Post-production" />
+              <div class="article-category">Technique</div>
+            </div>
+            <div class="article-content">
+              <div class="article-meta">
+                <span class="article-date">5 Février 2024</span>
+                <span class="article-read-time">12 min</span>
+              </div>
+              <h3>Workflow de post-production pour événements</h3>
+              <p>Notre méthode éprouvée pour traiter efficacement des milliers de photos d'événement...</p>
+              <div class="article-tags">
+                <span class="tag">Post-production</span>
+                <span class="tag">Workflow</span>
+              </div>
+              <a href="#" class="article-link">Lire la suite</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="load-more-section">
+          <button class="btn btn-secondary" id="loadMoreBtn">
+            <span>Charger plus d'articles</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 13l3 3 7-7M7 6l3 3 7-7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h2>Restez informé</h2>
+            <p>Recevez nos derniers articles et conseils directement dans votre boîte mail</p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Votre adresse email" required>
+              <button type="submit" class="btn btn-primary">
+                <span>S'abonner</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                </svg>
+              </button>
+            </div>
+            <p class="newsletter-disclaimer">
+              Pas de spam, désabonnement en un clic. Consultez notre <a href="/politique-confidentialite">politique de confidentialité</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    margin-top: 70px;
+  }
+
+  .hero-articles {
+    background: linear-gradient(135deg, var(--color-primary), #1e40af);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .featured-article {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-bg-light);
+  }
+
+  .featured-post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+    background: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .featured-image {
+    position: relative;
+    aspect-ratio: 16/10;
+  }
+
+  .featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .featured-category {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--color-accent);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .featured-content {
+    padding: var(--spacing-2xl);
+  }
+
+  .featured-content h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+  }
+
+  .article-excerpt {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-light);
+  }
+
+  .articles-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-2xl);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .articles-filters {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    border: 2px solid var(--color-border);
+    background: white;
+    color: var(--color-text-light);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .filter-btn:hover,
+  .filter-btn.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+  }
+
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .article-card {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .article-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .article-card.hidden {
+    display: none;
+  }
+
+  .article-image {
+    position: relative;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+  }
+
+  .article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .article-card:hover .article-image img {
+    transform: scale(1.05);
+  }
+
+  .article-category {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--color-accent);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .article-content {
+    padding: var(--spacing-lg);
+  }
+
+  .article-meta {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    flex-wrap: wrap;
+  }
+
+  .article-meta span {
+    position: relative;
+  }
+
+  .article-meta span:not(:last-child)::after {
+    content: '•';
+    margin-left: var(--spacing-sm);
+    color: var(--color-border);
+  }
+
+  .article-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.4;
+  }
+
+  .article-content p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .article-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    background: var(--color-bg-light);
+    color: var(--color-text-light);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .article-link {
+    color: var(--color-primary);
+    font-weight: 500;
+    transition: var(--transition);
+  }
+
+  .article-link:hover {
+    color: var(--color-accent);
+  }
+
+  .load-more-section {
+    text-align: center;
+    margin-top: var(--spacing-2xl);
+  }
+
+  .newsletter-section {
+    background: var(--color-primary);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .newsletter-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+  }
+
+  .newsletter-text h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .newsletter-text p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .newsletter-input-group {
+    display: flex;
+    gap: var(--spacing-sm);
+  }
+
+  .newsletter-input-group input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+  }
+
+  .newsletter-input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .newsletter-input-group input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .newsletter-disclaimer {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+  }
+
+  .newsletter-disclaimer a {
+    color: var(--color-accent);
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+
+    .featured-post {
+      grid-template-columns: 1fr;
+    }
+
+    .featured-content {
+      padding: var(--spacing-lg);
+    }
+
+    .featured-content h2 {
+      font-size: 1.75rem;
+    }
+
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+
+    .articles-filters {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .articles-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .newsletter-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .newsletter-input-group {
+      flex-direction: column;
+    }
+
+    .article-meta {
+      font-size: 0.8rem;
+    }
+  }
+</style>
+
+<script>
+  // Filter functionality
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const articleCards = document.querySelectorAll('.article-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      
+      // Filter articles
+      articleCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        
+        if (filter === 'all' || category === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Load more functionality
+  document.getElementById('loadMoreBtn').addEventListener('click', function() {
+    this.innerHTML = '<span>Chargement...</span>';
+    
+    // Simulate loading more articles
+    setTimeout(() => {
+      this.innerHTML = `
+        <span>Charger plus d'articles</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 13l3 3 7-7M7 6l3 3 7-7"/>
+        </svg>
+      `;
+      alert('Tous les articles ont été chargés !');
+    }, 1500);
+  });
+
+  // Newsletter form
+  document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const submitButton = this.querySelector('button[type="submit"]');
+    const input = this.querySelector('input[type="email"]');
+    
+    submitButton.innerHTML = '<span>Inscription...</span>';
+    
+    setTimeout(() => {
+      alert('Merci pour votre inscription à notre newsletter !');
+      input.value = '';
+      submitButton.innerHTML = `
+        <span>S'abonner</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+        </svg>
+      `;
+    }, 1500);
+  });
+</script>

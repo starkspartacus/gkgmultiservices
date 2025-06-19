@@ -1,0 +1,465 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Portfolios - ReportPro" description="Découvrez nos portfolios de reportages événementiels, photographies corporate et productions créatives réalisés par nos experts.">
+  <Header />
+  
+  <main>
+    <section class="hero-portfolios">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Nos réalisations</h1>
+          <p class="hero-subtitle">
+            Découvrez une sélection de nos meilleurs travaux dans différents domaines d'expertise
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="evenementiel">Événementiel</button>
+          <button class="filter-btn" data-filter="corporate">Corporate</button>
+          <button class="filter-btn" data-filter="documentaire">Documentaire</button>
+          <button class="filter-btn" data-filter="mariage">Mariage</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolios-grid">
+      <div class="container">
+        <div class="grid">
+          <!-- Événementiel -->
+          <div class="portfolio-item" data-category="evenementiel">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Conférence Tech Paris 2024" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Conférence Tech Paris 2024</h3>
+                  <p class="portfolio-category">Événementiel</p>
+                  <p class="portfolio-description">Couverture complète de la plus grande conférence tech européenne avec plus de 5000 participants.</p>
+                  <div class="portfolio-meta">
+                    <span class="meta-item">📅 Mars 2024</span>
+                    <span class="meta-item">📸 250+ photos</span>
+                    <span class="meta-item">🎥 4 vidéos</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="evenementiel">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Lancement Produit Luxe" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Lancement Produit Luxe</h3>
+                  <p class="portfolio-category">Événementiel</p>
+                  <p class="portfolio-description">Événement exclusif pour le lancement d'une nouvelle collection de haute couture parisienne.</p>
+                  <div class="portfolio-meta">
+                    <span class="meta-item">📅 Février 2024</span>
+                    <span class="meta-item">📸 180+ photos</span>
+                    <span class="meta-item">🎥 2 vidéos</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Corporate -->
+          <div class="portfolio-item" data-category="corporate">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Séminaire d'Entreprise Internationale" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Séminaire d'Entreprise</h3>
+                  <p class="portfolio-category">Corporate</p>
+                  <p class="portfolio-description">Documentation du séminaire annuel d'une multinationale avec 200 collaborateurs.</p>
+                  <div class="portfolio-meta">
+                    <span class="meta-item">📅 Janvier 2024</span>
+                    <span class="meta-item">📸 300+ photos</span>
+                    <span class="meta-item">🎥 1 vidéo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="corporate">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Portraits Corporate" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Portraits Corporate</h3>
+                  <p class="portfolio-category">Corporate</p>
+                  <p class="portfolio-description">Série de portraits professionnels pour le comité de direction d'une startup tech.</p>
+                  <div class="portfolio-meta">
+                    <span class="meta-item">📅 Décembre 2023</span>
+                    <span class="meta-item">📸 50+ photos</span>
+                    <span class="meta-item">👥 15 personnes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Documentaire -->
+          <div class="portfolio-item" data-category="documentaire">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Gala de Charité" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Gala de Charité</h3>
+                  <p class="portfolio-category">Documentaire</p>
+                  <p class="portfolio-description">Reportage complet d'un gala caritatif prestigieux au profit de l'éducation.</p>
+                  <div class="portfolio-meta">
+                    <span class="meta-item">📅 Novembre 2023</span>
+                    <span class="meta-item">📸 400+ photos</span>
+                    <span class="meta-item">🎥 3 vidéos</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="documentaire">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/1181474/pexels-photo-1181474.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Reportage Atelier Artisan" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Atelier d'Artisan</h3>
+                  <p class="portfolio-category">Documentaire</p>
+                  <p class="portfolio-description">Immersion dans l'atelier d'un maître artisan joaillier parisien.</p>
+                  <div class="portfolio-meta">
+                    <span class="meta-item">📅 Octobre 2023</span>
+                    <span class="meta-item">📸 120+ photos</span>
+                    <span class="meta-item">🎥 1 vidéo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mariage -->
+          <div class="portfolio-item" data-category="mariage">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Mariage Château de Versailles" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Mariage de Prestige</h3>
+                  <p class="portfolio-category">Mariage</p>
+                  <p class="portfolio-description">Célébration exceptionnelle dans un château historique de la région parisienne.</p>
+                  <div class="portfolio-meta">
+                    <span class="meta-item">📅 Septembre 2023</span>
+                    <span class="meta-item">📸 500+ photos</span>
+                    <span class="meta-item">🎥 2 vidéos</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="mariage">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Mariage Bohème" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Mariage Bohème</h3>
+                  <p class="portfolio-category">Mariage</p>
+                  <p class="portfolio-description">Cérémonie intimiste en pleine nature avec une ambiance bohème chic.</p>
+                  <div class="portfolio-meta">
+                    <span class="meta-item">📅 Août 2023</span>
+                    <span class="meta-item">📸 350+ photos</span>
+                    <span class="meta-item">🎥 1 vidéo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="evenementiel">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Festival de Musique" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Festival de Musique</h3>
+                  <p class="portfolio-category">Événementiel</p>
+                  <p class="portfolio-description">Couverture complète d'un festival de musique électronique sur 3 jours.</p>
+                  <div class="portfolio-meta">
+                    <span class="meta-item">📅 Juillet 2023</span>
+                    <span class="meta-item">📸 800+ photos</span>
+                    <span class="meta-item">🎥 5 vidéos</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Vous avez un projet en tête ?</h2>
+          <p>Contactez-nous pour discuter de votre prochain événement et obtenir un devis personnalisé</p>
+          <div class="cta-buttons">
+            <a href="/contact" class="btn btn-primary">Demander un devis</a>
+            <a href="/services" class="btn btn-secondary">Voir nos services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    margin-top: 70px;
+  }
+
+  .hero-portfolios {
+    background: linear-gradient(135deg, var(--color-primary), #1e40af);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .filter-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-bg-light);
+  }
+
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: 12px 24px;
+    border: 2px solid var(--color-border);
+    background: white;
+    color: var(--color-text-light);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+  }
+
+  .filter-btn:hover,
+  .filter-btn.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+  }
+
+  .portfolios-grid {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .portfolio-item {
+    position: relative;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    aspect-ratio: 3/2;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+  }
+
+  .portfolio-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .portfolio-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+
+  .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+    opacity: 0;
+    transition: var(--transition);
+  }
+
+  .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+  }
+
+  .portfolio-item:hover .portfolio-image img {
+    transform: scale(1.1);
+  }
+
+  .portfolio-content {
+    text-align: center;
+  }
+
+  .portfolio-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .portfolio-category {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .portfolio-description {
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-md);
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .portfolio-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .portfolio-item.hidden {
+    display: none;
+  }
+
+  .cta-section {
+    background: var(--color-bg-light);
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .cta-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .filter-buttons {
+      gap: var(--spacing-xs);
+    }
+
+    .filter-btn {
+      padding: 10px 16px;
+      font-size: 0.9rem;
+    }
+
+    .cta-content h2 {
+      font-size: 2rem;
+    }
+
+    .portfolio-meta {
+      font-size: 0.8rem;
+    }
+  }
+</style>
+
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      
+      // Filter portfolio items
+      portfolioItems.forEach(item => {
+        const category = item.getAttribute('data-category');
+        
+        if (filter === 'all' || category === filter) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>

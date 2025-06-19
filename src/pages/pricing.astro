@@ -1,0 +1,739 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Tarifs - GKG Reportage" description="Découvrez nos tarifs transparents pour tous nos services de reportage photographique et vidéo. Des forfaits adaptés à tous les budgets et événements.">
+  <Header />
+  
+  <main>
+    <section class="hero-pricing">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Nos tarifs transparents</h1>
+          <p class="hero-subtitle">
+            Des solutions adaptées à tous les budgets et tous les types d'événements. 
+            Choisissez le forfait qui correspond à vos besoins ou composez votre prestation sur mesure.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Forfaits principaux -->
+    <section class="packages-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nos forfaits événementiels</h2>
+          <p>Des solutions complètes pour tous types d'événements</p>
+        </div>
+        
+        <div class="packages-grid">
+          <!-- Forfait Essentiel -->
+          <div class="package-card">
+            <div class="package-header">
+              <h3>Essentiel</h3>
+              <div class="package-price">
+                <span class="price">299€</span>
+                <span class="duration">/événement</span>
+              </div>
+              <p class="package-description">Parfait pour les petits événements et réunions</p>
+            </div>
+            
+            <div class="package-features">
+              <ul>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 2 heures de reportage</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 50 photos retouchées</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 1 photographe professionnel</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Livraison sous 48h</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Galerie en ligne</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Support client</li>
+              </ul>
+            </div>
+            
+            <div class="package-footer">
+              <a href="/contact" class="btn btn-outline">Choisir ce forfait</a>
+            </div>
+          </div>
+
+          <!-- Forfait Premium -->
+          <div class="package-card featured">
+            <div class="package-badge">Le plus populaire</div>
+            <div class="package-header">
+              <h3>Premium</h3>
+              <div class="package-price">
+                <span class="price">599€</span>
+                <span class="duration">/événement</span>
+              </div>
+              <p class="package-description">Notre forfait le plus demandé pour les événements d'entreprise</p>
+            </div>
+            
+            <div class="package-features">
+              <ul>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 4 heures de reportage</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 150 photos retouchées</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 1 photographe + 1 assistant</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Vidéo teaser (30s)</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Livraison sous 24h</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Galerie en ligne + USB</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Retouche avancée</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Support prioritaire</li>
+              </ul>
+            </div>
+            
+            <div class="package-footer">
+              <a href="/contact" class="btn btn-primary">Choisir ce forfait</a>
+            </div>
+          </div>
+
+          <!-- Forfait Excellence -->
+          <div class="package-card">
+            <div class="package-header">
+              <h3>Excellence</h3>
+              <div class="package-price">
+                <span class="price">999€</span>
+                <span class="duration">/événement</span>
+              </div>
+              <p class="package-description">Pour les événements prestigieux et les galas</p>
+            </div>
+            
+            <div class="package-features">
+              <ul>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 6 heures de reportage</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 300 photos retouchées</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 2 photographes + 1 vidéaste</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Vidéo complète (3-5 min)</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Livraison express (12h)</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Galerie + USB + Album</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Retouche professionnelle</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Support VIP 24/7</li>
+              </ul>
+            </div>
+            
+            <div class="package-footer">
+              <a href="/contact" class="btn btn-outline">Choisir ce forfait</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Services à la carte -->
+    <section class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Services à la carte</h2>
+          <p>Composez votre prestation sur mesure selon vos besoins spécifiques</p>
+        </div>
+        
+        <div class="services-grid">
+          <!-- Services Photo -->
+          <div class="service-category">
+            <h3>Services photographiques</h3>
+            <div class="service-list">
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Reportage photo</h4>
+                  <p>Couverture complète de votre événement</p>
+                </div>
+                <div class="service-price">150€/h</div>
+              </div>
+              
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Portraits professionnels</h4>
+                  <p>Photos de groupe et portraits individuels</p>
+                </div>
+                <div class="service-price">80€/h</div>
+              </div>
+              
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Retouche photo</h4>
+                  <p>Retouche professionnelle par image</p>
+                </div>
+                <div class="service-price">5€/image</div>
+              </div>
+              
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Photos supplémentaires</h4>
+                  <p>Images en plus du forfait choisi</p>
+                </div>
+                <div class="service-price">3€/image</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Services Vidéo -->
+          <div class="service-category">
+            <h3>Services vidéo</h3>
+            <div class="service-list">
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Reportage vidéo</h4>
+                  <p>Captation vidéo de votre événement</p>
+                </div>
+                <div class="service-price">200€/h</div>
+              </div>
+              
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Vidéo teaser</h4>
+                  <p>Montage court pour réseaux sociaux</p>
+                </div>
+                <div class="service-price">150€</div>
+              </div>
+              
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Vidéo complète</h4>
+                  <p>Montage professionnel 3-5 minutes</p>
+                </div>
+                <div class="service-price">300€</div>
+              </div>
+              
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Montage sur mesure</h4>
+                  <p>Montage personnalisé selon vos besoins</p>
+                </div>
+                <div class="service-price">50€/min</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Services Supplémentaires -->
+          <div class="service-category">
+            <h3>Services supplémentaires</h3>
+            <div class="service-list">
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Photographe supplémentaire</h4>
+                  <p>Un photographe en plus pour plus de couverture</p>
+                </div>
+                <div class="service-price">100€/h</div>
+              </div>
+              
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Livraison express</h4>
+                  <p>Livraison en moins de 12h</p>
+                </div>
+                <div class="service-price">50€</div>
+              </div>
+              
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Album photo</h4>
+                  <p>Album imprimé professionnel</p>
+                </div>
+                <div class="service-price">80€</div>
+              </div>
+              
+              <div class="service-item">
+                <div class="service-info">
+                  <h4>Support USB personnalisé</h4>
+                  <p>Clé USB avec vos photos et logo</p>
+                </div>
+                <div class="service-price">25€</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Événements spéciaux -->
+    <section class="special-events-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Événements spéciaux</h2>
+          <p>Tarifs adaptés pour les événements particuliers</p>
+        </div>
+        
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3>Mariages</h3>
+            <p class="event-description">Couverture complète de votre journée spéciale</p>
+            <div class="event-price">À partir de 1200€</div>
+            <ul class="event-features">
+              <li>Préparation et cérémonie</li>
+              <li>Vin d'honneur et soirée</li>
+              <li>400+ photos retouchées</li>
+              <li>Vidéo souvenir</li>
+              <li>Album premium</li>
+            </ul>
+          </div>
+
+          <div class="event-card">
+            <div class="event-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+            </div>
+            <h3>Galas et soirées</h3>
+            <p class="event-description">Événements prestigieux et cérémonies</p>
+            <div class="event-price">À partir de 800€</div>
+            <ul class="event-features">
+              <li>Couverture complète</li>
+              <li>Photos de groupe</li>
+              <li>Vidéo teaser</li>
+              <li>Livraison express</li>
+              <li>Support VIP</li>
+            </ul>
+          </div>
+
+          <div class="event-card">
+            <div class="event-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="m22 21-3-3m0 0a5.5 5.5 0 1 1-7.778-7.778 5.5 5.5 0 0 1 7.778 7.778Z"></path>
+              </svg>
+            </div>
+            <h3>Événements d'entreprise</h3>
+            <p class="event-description">Séminaires, conférences, team building</p>
+            <div class="event-price">À partir de 500€</div>
+            <ul class="event-features">
+              <li>Reportage professionnel</li>
+              <li>Photos corporate</li>
+              <li>Vidéo institutionnelle</li>
+              <li>Livraison rapide</li>
+              <li>Droits d'usage inclus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Questions fréquentes</h2>
+          <p>Tout ce que vous devez savoir sur nos tarifs</p>
+        </div>
+        
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Les tarifs incluent-ils les frais de déplacement ?</h3>
+            <p>Nos tarifs incluent les frais de déplacement dans un rayon de 50km autour de Paris. Au-delà, des frais de déplacement peuvent s'appliquer selon la distance.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>Quels sont les délais de livraison ?</h3>
+            <p>Les délais varient selon le forfait choisi : 48h pour Essentiel, 24h pour Premium, et 12h pour Excellence. Des options de livraison express sont disponibles.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>Puis-je modifier ma commande après réservation ?</h3>
+            <p>Oui, les modifications sont possibles jusqu'à 48h avant l'événement. Des frais peuvent s'appliquer selon les changements demandés.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>Les photos sont-elles libres de droits ?</h3>
+            <p>Oui, toutes nos prestations incluent les droits d'usage pour votre communication. Les photos restent la propriété de ReportPro mais vous pouvez les utiliser librement.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>Proposez-vous des devis personnalisés ?</h3>
+            <p>Absolument ! Pour les événements spéciaux ou les besoins particuliers, nous établissons des devis sur mesure. Contactez-nous pour en discuter.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>Quels moyens de paiement acceptez-vous ?</h3>
+            <p>Nous acceptons les cartes bancaires, virements bancaires et chèques. Un acompte de 30% est demandé à la réservation, le solde à la livraison.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Prêt à immortaliser votre événement ?</h2>
+          <p>Contactez-nous pour un devis personnalisé ou réservez directement en ligne</p>
+          <div class="cta-buttons">
+            <a href="/contact" class="btn btn-primary">Demander un devis</a>
+            <a href="/portfolios" class="btn btn-secondary">Voir nos réalisations</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    margin-top: 70px;
+  }
+
+  .hero-pricing {
+    background: linear-gradient(135deg, var(--color-primary), #1e40af);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .packages-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .section-header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+  }
+
+  .package-card {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-xl);
+    position: relative;
+    transition: var(--transition);
+    border: 2px solid transparent;
+  }
+
+  .package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .package-card.featured {
+    border-color: var(--color-primary);
+    transform: scale(1.05);
+  }
+
+  .package-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .package-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .package-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+  }
+
+  .package-price {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .duration {
+    font-size: 1rem;
+    color: var(--color-text-light);
+  }
+
+  .package-description {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+  }
+
+  .package-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .package-features li {
+    padding: var(--spacing-xs) 0;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text);
+  }
+
+  .package-features li:last-child {
+    border-bottom: none;
+  }
+
+  .package-footer {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .services-section {
+    background: var(--color-bg-light);
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .service-category {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .service-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+    text-align: center;
+  }
+
+  .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    background: var(--color-bg-light);
+    border-radius: var(--border-radius-md);
+    transition: var(--transition);
+  }
+
+  .service-item:hover {
+    background: var(--color-primary);
+    color: white;
+  }
+
+  .service-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .service-info p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+  }
+
+  .service-price {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-primary);
+  }
+
+  .service-item:hover .service-price {
+    color: white;
+  }
+
+  .special-events-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .event-card {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+  }
+
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .event-icon {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .event-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+  }
+
+  .event-description {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .event-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .event-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  .event-features li {
+    padding: var(--spacing-xs) 0;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-light);
+  }
+
+  .event-features li:last-child {
+    border-bottom: none;
+  }
+
+  .faq-section {
+    background: var(--color-bg-light);
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .faq-item {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .faq-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+  }
+
+  .faq-item p {
+    color: var(--color-text-light);
+    line-height: 1.6;
+  }
+
+  .cta-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .cta-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+
+    .packages-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .package-card.featured {
+      transform: none;
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .events-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-content h2 {
+      font-size: 2rem;
+    }
+
+    .service-item {
+      flex-direction: column;
+      text-align: center;
+      gap: var(--spacing-sm);
+    }
+  }
+</style> 
