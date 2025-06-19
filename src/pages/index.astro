@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Marquee from '../components/magicui/Marquee.astro';
+import BoxRevealIsland from '../components/magicui/BoxRevealIsland.jsx';
 
 ---
 
@@ -20,17 +21,21 @@ import Marquee from '../components/magicui/Marquee.astro';
       </div>
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-title animate-fade-up">Capturer l'essence de vos événements</h1>
+          <BoxRevealIsland client:only="react" width="100%">
+            <h1 class="hero-title animate-fade-up">Capturer l'essence de vos événements</h1>
+          </BoxRevealIsland>
           <p class="hero-subtitle animate-fade-up-delay-1">
             Plateforme de reporters indépendants et d'agences spécialisées dans la couverture professionnelle d'événements
           </p>
           <div class="hero-cta animate-fade-up-delay-2">
-            <a href="/portfolios" class="btn btn-primary btn-animated">
-              <span>Découvrir nos portfolios</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </a>
+            <BoxRevealIsland client:only="react" width="fit-content">
+              <a href="/portfolios" class="btn btn-primary btn-animated">
+                <span>Découvrir nos portfolios</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </BoxRevealIsland>
             <a href="/contact" class="btn btn-secondary btn-animated text-white">
               <span>Demander un devis</span>
             </a>

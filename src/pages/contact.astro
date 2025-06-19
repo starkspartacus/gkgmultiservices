@@ -9,6 +9,7 @@ import Footer from '../components/Footer.astro';
   
   <main>
     <section class="hero-contact">
+      <div class="hero-overlay"></div>
       <div class="container">
         <div class="hero-content">
           <h1>Contactez-nous</h1>
@@ -164,8 +165,21 @@ import Footer from '../components/Footer.astro';
           
           <!-- Contact Info -->
           <div class="contact-info">
+            <!-- Google Map -->
+            <div class="info-section" style="padding:0; box-shadow:none; background:none;">
+              <iframe
+                src="https://www.google.com/maps?q=Yopougon,+Abidjan,+Côte+d'Ivoire&hl=fr&z=14&output=embed"
+                width="100%"
+                height="250"
+                style="border:0; border-radius:12px; width:100%; min-height:220px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Carte Yopougon Abidjan"
+              ></iframe>
+            </div>
             <div class="info-section">
-              <h3>Informations de contact</h3>
+              <h3>Coordonnées</h3>
               <div class="contact-details">
                 <div class="contact-item">
                   <div class="contact-icon">
@@ -176,10 +190,9 @@ import Footer from '../components/Footer.astro';
                   </div>
                   <div>
                     <h4>Adresse</h4>
-                    <p>75 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+                    <p>Yopougon, Abidjan, Côte d'Ivoire, 00225</p>
                   </div>
                 </div>
-                
                 <div class="contact-item">
                   <div class="contact-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -187,11 +200,10 @@ import Footer from '../components/Footer.astro';
                     </svg>
                   </div>
                   <div>
-                    <h4>Téléphone</h4>
-                    <p>+33 1 23 45 67 89</p>
+                    <h4>Mobile</h4>
+                    <p>+225 0757528434</p>
                   </div>
                 </div>
-                
                 <div class="contact-item">
                   <div class="contact-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -200,8 +212,8 @@ import Footer from '../components/Footer.astro';
                     </svg>
                   </div>
                   <div>
-                    <h4>Email</h4>
-                    <p>contact@reportpro.fr</p>
+                    <h4>E-mail</h4>
+                    <p>gkgtv2020@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -347,10 +359,29 @@ import Footer from '../components/Footer.astro';
   }
 
   .hero-contact {
-    background: linear-gradient(135deg, var(--color-primary), #1e40af);
+    background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    position: relative;
     color: white;
     padding: var(--spacing-2xl) 0;
     text-align: center;
+    overflow: hidden;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(20, 30, 40, 0.55);
+    z-index: 1;
+  }
+
+  .hero-contact .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+    max-width: 600px;
   }
 
   .hero-content h1 {
@@ -698,43 +729,39 @@ import Footer from '../components/Footer.astro';
     line-height: 1.6;
   }
 
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2.5rem;
-    }
-
-    .hero-subtitle {
-      font-size: 1.1rem;
-    }
-
-    .contact-grid {
-      grid-template-columns: 1fr;
-      gap: var(--spacing-xl);
-    }
-
-    .contact-form-container {
-      padding: var(--spacing-lg);
-    }
-
-    .form-row {
-      grid-template-columns: 1fr;
-    }
-
-    .form-header h2 {
-      font-size: 1.75rem;
-    }
-
-    .section-header h2 {
-      font-size: 2rem;
-    }
-
-    .faq-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .contact-item {
+  .hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .hero-content {
+    flex: 1 1 320px;
+    min-width: 260px;
+  }
+  .hero-image {
+    flex: 1 1 320px;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-image img {
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    object-fit: cover;
+  }
+  @media (max-width: 900px) {
+    .hero-flex {
       flex-direction: column;
-      text-align: center;
+      gap: 1.5rem;
+    }
+    .hero-image img {
+      max-width: 100%;
     }
   }
 </style>
@@ -768,19 +795,19 @@ import Footer from '../components/Footer.astro';
     e.preventDefault();
     
     // Simple form validation and submission simulation
-    const formData = new FormData(this);
+    const formData = new FormData(this as HTMLFormElement);
     const submitButton = this.querySelector('button[type="submit"]');
     
     // Disable button and show loading state
-    submitButton.disabled = true;
+    (submitButton as HTMLButtonElement).disabled = true;
     submitButton.innerHTML = '<span>Envoi en cours...</span>';
     
     // Simulate form submission
     setTimeout(() => {
       alert('Merci pour votre demande ! Nous vous recontacterons dans les plus brefs délais.');
-      this.reset();
-      submitButton.disabled = false;
-      submitButton.innerHTML = `
+      (this as HTMLFormElement).reset();
+      (submitButton as HTMLButtonElement).disabled = false;
+      (submitButton as HTMLButtonElement).innerHTML = `
         <span>Envoyer ma demande</span>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="22" y1="2" x2="11" y2="13"></line>
